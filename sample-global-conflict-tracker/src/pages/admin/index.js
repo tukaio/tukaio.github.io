@@ -49,7 +49,7 @@ export default function AdminPage(props) {
 
   return (
     <div className="admin-page">
-      <>Hello</>
+      <h1>Welcome to Admin</h1>
     </div>
   );
 }

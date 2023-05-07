@@ -36,6 +36,7 @@ export default function About(props) {
   return (
     <>
       <Button onClick={() => generateData()}>Khởi tạo dữ liệu mẫu</Button>
+      <p>Khởi tạo dữ liệu mẫu sẽ làm mất dữ liệu hiện tại của bạn, chức năng này chỉ tạo dữ liệu demo.</p>
     </>
   );
 }

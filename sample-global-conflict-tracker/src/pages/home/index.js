@@ -1,7 +1,8 @@
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import { SettingOutlined } from "@ant-design/icons";
 import database from "../../database";
 import "./home.css";
 
@@ -61,6 +62,9 @@ function HomePage(props) {
       <Row className="content">
         <Col className="map-content">
           <div id="mapContainer"></div>
+          <Button onClick={() => navigate("/admin")}>
+            <SettingOutlined /> Cài đặt
+          </Button>
         </Col>
         <Col className="map-tracking-container">
           {mapTrackings?.map((mapTracking, index) => {

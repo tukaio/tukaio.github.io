@@ -1,4 +1,4 @@
-import { DesktopOutlined, FileOutlined } from "@ant-design/icons";
+import { DesktopOutlined, FileOutlined, HomeOutlined } from "@ant-design/icons";
 import { Layout, Menu } from "antd";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -16,6 +16,12 @@ export function PrivateRoute(props) {
   const navigate = useNavigate();
   const [collapsed, setCollapsed] = useState(false);
   const items = [
+    {
+      key: "app.home",
+      icon: <HomeOutlined />,
+      label: "Trang chủ",
+      path: "/",
+    },
     {
       key: "app.mapTracking",
       icon: <DesktopOutlined />,
