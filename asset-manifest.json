@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tukaio.github.io/static/css/main.697e9fca.css",
+    "main.js": "/tukaio.github.io/static/js/main.c11c97e9.js",
+    "static/js/787.2fcbabb6.chunk.js": "/tukaio.github.io/static/js/787.2fcbabb6.chunk.js",
+    "index.html": "/tukaio.github.io/index.html",
+    "static/media/loading.svg": "/tukaio.github.io/static/media/loading.368da609306c148c0ea9f784b7a4f52c.svg",
+    "main.697e9fca.css.map": "/tukaio.github.io/static/css/main.697e9fca.css.map",
+    "main.c11c97e9.js.map": "/tukaio.github.io/static/js/main.c11c97e9.js.map",
+    "787.2fcbabb6.chunk.js.map": "/tukaio.github.io/static/js/787.2fcbabb6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.697e9fca.css",
+    "static/js/main.c11c97e9.js"
+  ]
+}
