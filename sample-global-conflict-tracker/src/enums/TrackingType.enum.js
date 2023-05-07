@@ -1,0 +1,5 @@
+export const EnumTrackingType = {
+  TRANH_CHAP_LANH_THO: "TRACKING_TYPE_1",
+  XUNG_DOT: "TRACKING_TYPE_2",
+  BAT_ON_CHINH_TRI: "TRACKING_TYPE_3",
+};

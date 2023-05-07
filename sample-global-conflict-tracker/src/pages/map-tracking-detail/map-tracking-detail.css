@@ -1,0 +1,22 @@
+
+.map-tracking-detail-page {
+    height: 100vh;
+    background-color: #ffffff99;
+}
+
+.page-title {
+}
+
+.page-title h2 {
+    text-align: center;
+    margin: auto;
+    font-size:50px;
+    font-weight: bold;
+}
+
+.page-content {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0ffffbd;
+    border-radius: 10px;
+}

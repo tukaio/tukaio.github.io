@@ -1,0 +1,69 @@
+.home-page {
+
+}
+
+.home-page .content {
+  flex-flow: unset;
+}
+
+.home-page .header {
+ height: auto;
+ max-height: 150px;
+ background-color: #8E0000;
+}
+
+.home-page .map-title {
+  margin: auto;
+  width: 65%;
+  text-align: center;
+  font-size: 32px;
+  color: white;
+}
+
+.home-page .content .map-content {
+  width: 95%;
+  margin: auto;
+}
+
+.home-page .header .tracking-type-container {
+  float: right;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+.home-page .header .tracking-type {
+  cursor: pointer;
+  margin: auto 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 15px;
+  width: 130px;
+  max-height: 150px;
+}
+
+.home-page .header .tracking-type-label {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  height: 80px;
+  display: flex;
+}
+.home-page .header .tracking-type-label span {
+  margin: auto;
+}
+
+.home-page .header .tracking-type.selected {
+  background-color: #00000054;
+}
+
+.home-page .content .map-tracking-container{
+  width: 500px;
+}
+
+.f-right {
+  float: right;
+}
+
+#mapContainer {
+  height: 100%;
+}

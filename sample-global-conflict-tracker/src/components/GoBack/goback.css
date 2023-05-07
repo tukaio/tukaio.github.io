@@ -1,0 +1,11 @@
+.goback {
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+}
+
+.goback span {
+    padding: 10px;
+    font-size: 60px;
+    color: #8E0000;
+}

@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  height: 100%;
+}
+
+.content .map-tracking {
+  cursor: pointer;
+  padding: 10px;
+  background-color:#002060;
+  margin-bottom: 30px;
+  min-width: 350px;
+}
+
+.content .map-tracking:hover {
+  background-color:#526997;
+}
+
+.content .map-tracking .title {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+ .content .map-tracking-container {
+  position: relative;
+  margin-top: 30px;
+  padding-right: 15px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.content .map-tracker {
+  background-color: #50373754;
+  height: 100%;
+}
+
+.map-tracking.detail {
+  cursor: unset;
+  margin: auto;
+  margin-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 15px
+}
+
+.map-tracking.detail .title {
+  font-size: 44px;
+}
+
+.map-tracking.detail:hover {
+  background-color: #002060
+}
