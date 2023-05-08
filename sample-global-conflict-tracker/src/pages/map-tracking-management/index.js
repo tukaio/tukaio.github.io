@@ -59,7 +59,7 @@ export default function TrackingPointList(props) {
     if (props.afterRender) {
       props.afterRender();
     }
-  }, []);
+  }, [props]);
 
   const reloadDataTable = () => {
     const mapTrackings = database.MapTrackings.getAll();

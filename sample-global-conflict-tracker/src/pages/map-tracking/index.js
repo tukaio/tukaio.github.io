@@ -20,7 +20,7 @@ function MapTrackingPage(props) {
         database.MapTrackingDetails.getAll().filter((i) => i.mapTrackingId === mapTrackingId) ?? [];
       setMapTrackingDetails(mapTrackingDetails);
     }
-  }, []);
+  }, [mapTrackingId]);
 
   const onClickViewDetail = (mapTrackingDetailId) => {
     navigate(`/map-tracking/${mapTrackingId}/detail/${mapTrackingDetailId}`);

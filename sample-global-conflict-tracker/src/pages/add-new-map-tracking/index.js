@@ -27,8 +27,6 @@ export default function AddNewTrackingPoint(props) {
     };
   });
 
-  console.log("debug edit initialValue ", initialValue);
-
   useEffect(() => {
     const countries = database.Countries.getAll();
     setCountries(countries);
@@ -41,7 +39,7 @@ export default function AddNewTrackingPoint(props) {
       form.setFieldsValue(formValues);
       setRedPoints(formValues?.coords);
     }, 1000);
-  }, []);
+  }, [form, initialValue, isEdit]);
 
   useEffect(() => {
     if (currentTabDetail === detailTab.MAP_POINT) {
@@ -58,14 +56,14 @@ export default function AddNewTrackingPoint(props) {
         }, 2000);
       }, 1000);
     }
-  }, [currentTabDetail]);
+  }, [currentTabDetail, form]);
 
   useEffect(() => {
     form.setFieldsValue({
       ...form.getFieldsValue(),
       coords: redPoints,
     });
-  }, [redPoints]);
+  }, [form, redPoints]);
 
   const fillRedPointToMap = (coords) => {
     if (coords && coords?.length > 0) {
@@ -111,7 +109,7 @@ export default function AddNewTrackingPoint(props) {
 
       let _mapTrackingDetails = [];
       if (mapTrackingDetails && mapTrackingDetails?.length > 0) {
-        for (var i = 0; i < mapTrackingDetails.length; i++) {
+        for (i = 0; i < mapTrackingDetails.length; i++) {
           const _mapTrackingDetail = mapTrackingDetails[i];
           const newMapTrackingDetail = {
             ..._mapTrackingDetail,

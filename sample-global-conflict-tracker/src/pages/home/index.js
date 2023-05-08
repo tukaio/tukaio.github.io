@@ -43,7 +43,7 @@ function HomePage(props) {
         <Col span={12}>
           <Row className="tracking-type-container">
             {database.TrackingTypes.getAll()?.map((trackingType, index) => {
-              const { id, code, name } = trackingType;
+              const { id, name } = trackingType;
               return (
                 <div
                   key={index}
